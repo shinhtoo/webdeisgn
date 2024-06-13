@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--CSS Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Own Carousel CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body>
+    <!--Header Section-->
+    <header>
+      <!--Navigation-->
+      <nav class="navbar navbar-expand-lg bg-body-light border-bottom">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-resize5.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item p-2">
+                <button type="button" class="btn btn-outline-danger">
+                  Contact Us
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Banner Carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/banner1.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="fs-4 mt-5">"Innovative Engineering, Inspired Spaces"</p>
+              <h1 class="text-uppercase fw-bolder mb-3 mt-5">
+                Alpha Engineering and Decoration Co.,Ltd
+              </h1>
+              <button type="button" class="btn btn-danger mt-5">
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="images/banner2.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="images/banner3.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!--About Section-->
+    <section class="about">
+      <div class="container text-center my-5">
+        <div>
+          <h3 class="pt-4">About Us</h3>
+          <hr/class="w-25 m-auto">
+        </div>
+
+        <div class="row my-5">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+            <p class="text-start">
+              <span class="fs-4 text-danger">Alpha</span> Engineering Technology
+              brings you the best services solutions.
+            </p>
+            <p class="text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              corporis magni distinctio vel nostrum nobis officiis ipsum odit
+              repellendus tempore, accusamus recusandae. Libero accusamus
+              voluptatem ex excepturi voluptates, possimus adipisci.
+              <br /><br />Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Corrupti corporis magni distinctio vel nostrum nobis
+              officiis ipsum odit repellendus tempore, accusamus recusandae.
+              Libero accusamus voluptatem ex excepturi voluptates, possimus
+              adipisci.
+            </p>
+            <button type="button" class="btn btn-outline-danger float-start">
+              More Info
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+            <img src="images/banner3.jpg" class="about-img1" />
+            <img src="images/about us.jpg" class="about-img2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our Services-->
+    <section class="services">
+      <div class="container text-center my-5">
+        <div>
+          <h3 class="pt-4">Our Services</h3>
+          <hr/class="w-25 m-auto">
+          <p class="pt-3">"We provide best services for our customers."</p>
+        </div>
+      </div>
+      <!--Card-->
+      <div class="service-card">
+        <div class="row row-cols-1 row-cols-md-3 g-3 ms-5 me-5">
+          <div class="col service1">
+            <div class="card card-color">
+              <i
+                class="fa-solid fa-diagram-project m-auto pt-5 pb-2 fs-3"
+                style="color: #ff1f1f"
+              ></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4 text-white">Project Management</h5>
+                <p class="card-text pb-5 text-white">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col service2">
+            <div class="card">
+              <i
+                class="fa-solid fa-helmet-safety m-auto pt-5 pb-2 fs-3"
+                style="color: #ff1f1f"
+              ></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4">
+                  Construction Management
+                </h5>
+                <p class="card-text pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col service3">
+            <div class="card">
+           
+              <i class="fa-solid fa-paintbrush m-auto pt-5 pb-2 fs-3" style="color: #ff1f1f;"></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4">Interior Decoration</h5>
+                <p class="card-text pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col service4">
+            <div class="card">
+             
+              <i class="fa-solid fa-lightbulb m-auto pt-5 pb-3 fs-3" style="color: #ff1f1f;"></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4">Renovation</h5>
+                <p class="card-text pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col service5">
+            <div class="card">
+             
+              <i class="fa-solid fa-pen-nib m-auto pt-5 pb-2 fs-3" style="color: #ff1f1f;"></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4">Design Service</h5>
+                <p class="card-text pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col service6">
+            <div class="card">
+              
+              <i class="fa-solid fa-comment m-auto pt-5 pb-2 fs-3" style="color: #ff1f1f;"></i>
+              <div class="card-body">
+                <h5 class="card-title text-center pb-4">Consultancy Service</h5>
+                <p class="card-text pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  cum accusamus repudiandae neque magnam, magni aperiam a
+                  assumenda autem. Possimus in aspernatur quisquam? Cumque ullam
+                  consectetur, id ipsa debitis libero.Possimus in aspernatur
+                  quisquam? Cumque ullam consectetur, id ipsa debitis libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Projects-->
+    <section class="projects">
+      <div class="container text-center my-5 overlay-img">
+        <div>
+          <h3 class="pt-4">Our Projects</h3>
+          <hr/class="w-25 m-auto">
+        </div>
+      </div>
+      <!--Image card -->
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-sm-12 col-lg-4">
+            
+              <div class="card" style="width: 23rem;">
+                <div class="inner">
+                  <img src="images/banner1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Nine Stars Construction Project</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, repellendus nemo? Asperiores minus nemo voluptatum, culpa rerum incidunt vero quas fuga minima.</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-md-8 col-sm-12 col-lg-4">
+              <div class="card" style="width: 23rem;">
+              <div class="inner">
+                <img src="images/renovation.jpg" class="card-img-top" alt="...">
+              </div>
+                <div class="card-body">
+                  <h5 class="card-title">Coffee Shop Renovation</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, repellendus nemo? Asperiores minus nemo voluptatum, culpa rerum incidunt vero quas fuga minima.</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-md-8 col-sm-12 col-lg-4">
+            
+              <div class="card" style="width: 23rem;">
+              <div class="inner">
+                <img src="images/banner2.jpg" class="card-img-top" alt="...">
+              </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project in MM House</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, repellendus nemo? Asperiores minus nemo voluptatum, culpa rerum incidunt vero quas fuga minima.</p>
+                  <a href="#" class="btn btn-danger">More Info</a>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+
+ <!-- Events Activities Section-->
+  <section class="activities">
+    <div class="container text-center my-5">
+      <div>
+        <h3 class="pt-4">Our Activities</h3>
+        <hr/class="w-25 m-auto">
+      </div>
+    </div>
+    <div class="row gallery">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/adventure.jpeg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Adventure Trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/act1.jpeg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Climibing Moutain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/act2.jpeg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Spots Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/decor.jpeg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Decoration Collaboration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/happy hour.jpeg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Office Happy Hour Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="images/renovation.jpg" alt="" class="img-act">
+            <div class="overlay">
+              <p class="caption">Renovation Team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Our Clients-->
+  <section class="clients">
+    <div class="container text-center my-5">
+      <div>
+        <h3 class="pt-4">Our Clients</h3>
+        <hr/class="w-25 m-auto">
+      </div>
+      <div class="container logo-slider mt-4">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/customer logos.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/customer logos1.png" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+       <!--<img src="images/logo only.jpg" class="customer-img"> -->
+      </div>
+    </div>
+
+  </section>
+<!--Blog section-->
+<section class="blog">
+  <div class="container text-center my-5">
+    <div>
+      <h3 class="pt-4">Our Latest News</h3>
+      <hr/class="w-25 m-auto">
+    </div>
+    <div class="row">
+      <div class="col-6 col-lg-6 col-sm-12">
+        <div class="card text-center my-5">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">How to decorate your room!</h5>
+            <p class="card-text text-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis ullam dicta earum tenetur velit praesentium vitae numquam unde natus sapiente, beatae est? Aliquam repellendus temporibus atque cumque. Vero, sunt.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis ullam dicta earum tenetur velit praesentium vitae numquam unde natus sapiente, beatae est? Aliquam repellendus temporibus atque cumque. Vero, sunt.
+            </p>
+            <a href="#" class="btn btn-danger">Read More</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            2 days ago
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-6 col-sm-12">
+        <div class="card text-center my-5">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">How to decorate your room!</h5>
+            <p class="card-text text-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis ullam dicta earum tenetur velit praesentium vitae numquam unde natus sapiente, beatae est? Aliquam repellendus temporibus atque cumque. Vero, sunt.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis ullam dicta earum tenetur velit praesentium vitae numquam unde natus sapiente, beatae est? Aliquam repellendus temporibus atque cumque. Vero, sunt.
+            </p>
+            <a href="#" class="btn btn-danger">Read More</a>
+          </div>
+          <div class="card-footer text-body-secondary">
+            2 days ago
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!--Footer-->
+
+<section class="clients bg-black">
+  <div class="container my-5">
+  <div class="row pt-5">
+    <div class="col-md-3 col-lg-3 mx-auto mt-3">
+      <h5 class="text-danger">Alpha Engineering Company Limited</h5>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta odit minima id nam obcaecati illum minus maiores, itaque reiciendis quam in praesentium distinctio officiis possimus expedita tempore. Suscipit, aperiam!</p>
+    </div>
+    <div class="col-md-3 col-lg-3 mx-auto mt-3">
+      <h5 class="ms-2 text-danger">Our Services</h5>
+      <ul>
+        <li>Project Management Service</li>
+        <li>Interior Decoration Service</li>
+        <li>Construction Management Service</li>
+        <li>Design Service</li>
+        <li>Renovation Service</li>
+        <li>Consultancy Service</li>
+      </ul>
+    </div>
+    <div class="col-md-3 col-lg-3 mx-auto mt-3">
+      <h5 class="text-danger">Contact Us</h5>
+      <p>sale@alphaeng.com</p>
+      <p>09 446677234 , 09 77445261</p>
+      
+    </div>
+   
+  </div>
+  </div>
+  <div class="close">
+ <p class="text-center text-dark">www.alphaengineering.com</p>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JS Boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
